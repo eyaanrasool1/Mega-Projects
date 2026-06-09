@@ -1,0 +1,108 @@
+The Last Room
+
+🟢 1. Goal (Win Condition)
+
+To win, you must:
+
+Find Blue Key
+Use it to enter OLD GARAGE
+Find Red Key
+Use it to enter KITCHEN
+Get Escape Key
+Go to ESCAPE ROOM
+You win 🏆
+
+🗺️ 2. MAP UNDERSTANDING
+
+Your world is fixed like this:
+
+     -------- [MEETING HALL] -- [KITCHEN]
+     |
+[START ROOM] -- [HALLWAY] -- [OLD GARAGE] -- [ESCAPE]
+     |                           |
+       -------- [STUDIO]  --  [BED ROOM]
+🚶 3. MOVEMENT COMMANDS
+
+You move using:
+
+forward
+backward
+up
+down
+
+📦 4. ITEM COMMANDS
+Pick items:
+
+pick blue key
+pick red key
+pick medkit
+pick escape key
+
+🩹 5. ITEM FUNCTIONS
+🩹 Medkit
+use medkit
+
+✔ Heals your HP (+30)
+
+
+🔑 Blue Key
+Needed to unlock OLD GARAGE
+Must be in inventory
+
+🔴 Red Key
+Needed to unlock KITCHEN
+
+🏁 Escape Key
+Required to win
+Must be in inventory before entering ESCAPE
+
+⚔️ 6. COMBAT SYSTEM
+
+Enemies appear automatically:
+
+HALLWAY → Monster
+GARAGE → Beast
+How combat works:
+You must type a word correctly (fast typing game)
+If wrong → you lose HP
+If slow → you lose HP
+
+Example:
+
+TYPE THIS: apple
+
+
+🎒 7. INVENTORY COMMAND
+inventory
+
+Shows:
+
+all items you collected
+
+
+👀 8. LOOK COMMAND
+look
+
+Shows:
+
+room description
+items in room
+enemies in room
+
+
+💀 9. LOSING THE GAME
+
+You die if:
+
+HP reaches 0
+💀 YOU DIED
+
+
+🏆 10. WINNING THE GAME
+
+You win when:
+
+You are in ESCAPE room
+AND you have Escape Key
+Type exit
+🏆 YOU WIN!
