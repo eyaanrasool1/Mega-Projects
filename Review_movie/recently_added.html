@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recently Added - Rate the Movie</title>
+    <link rel="stylesheet" href="/css/recently_added.css">
+</head>
+<body>
+
+    <!-- Review Modal -->
+    <div id="reviewModal" class="modal">
+
+        <div class="modal-content">
+
+            <button id="closeModal">&times;</button>
+
+            <h2 id="movieTitle"></h2>
+
+            <p>
+                Current Rating:
+                <span id="movieRating"></span>/10
+            </p>
+
+            <label for="userRating">Your Rating</label>
+
+            <select id="userRating">
+                <option value="10">10 ⭐</option>
+                <option value="9">9 ⭐</option>
+                <option value="8">8 ⭐</option>
+                <option value="7">7 ⭐</option>
+                <option value="6">6 ⭐</option>
+                <option value="5">5 ⭐</option>
+                <option value="4">4 ⭐</option>
+                <option value="3">3 ⭐</option>
+                <option value="2">2 ⭐</option>
+                <option value="1">1 ⭐</option>
+            </select>
+
+            <textarea
+                id="reviewText"
+                placeholder="Write your review..."
+            ></textarea>
+
+            <button id="submitReview">
+                Submit Review
+            </button>
+
+        </div>
+
+    </div>
+
+    <header>
+
+        <nav>
+
+            <a href="index.html" class="logo">
+                Rate the Movie
+            </a>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="your_reviews.html">My Reviews</a></li>
+                <li><a href="top_rated.html">Top Rated</a></li>
+                <li><a href="recently_added.html">Recently Added</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section>
+
+            <h2>Recently Added</h2>
+
+            <div class="movie-row">
+
+                <img
+                    class="movie-card"
+                    src="https://imgcdn.kim/poster/h/81607354.jpg"
+                    alt="Killer Paradox"
+                    width="361"
+                    height="203"
+                    data-movie="Killer Paradox"
+                    data-rating="8.6">
+
+                <img
+                    class="movie-card"
+                    src="https://imgcdn.kim/poster/h/81947300.jpg"
+                    alt="Teach You a Lesson"
+                    width="361"
+                    height="203"
+                    data-movie="Teach You a Lesson"
+                    data-rating="8.2">
+
+                <img
+                    class="movie-card"
+                    src="https://imgcdn.kim/poster/h/80192098.jpg"
+                    alt="Money Heist"
+                    width="361"
+                    height="203"
+                    data-movie="Money Heist"
+                    data-rating="9.1">
+
+                <img
+                    class="movie-card"
+                    src="https://imgcdn.kim/poster/h/81696655.jpg"
+                    alt="Trigger"
+                    width="361"
+                    height="203"
+                    data-movie="Trigger"
+                    data-rating="8.7">
+
+                <img
+                    class="movie-card"
+                    src="https://movieswetextedabout.com/wp-content/uploads/2025/08/Wednesday-Season-2-part-1-review.webp"
+                    alt="Wednesday Season 2"
+                    width="361"
+                    height="203"
+                    data-movie="Wednesday Season 2"
+                    data-rating="8.8">
+
+                <img
+                    class="movie-card"
+                    src="https://www.heavenofhorror.com/wp-content/uploads/2025/11/Stranger-Things-Season-5-Volume-1-Netflix-Review-1200x675.jpg"
+                    alt="Stranger Things Season 5"
+                    width="361"
+                    height="203"
+                    data-movie="Stranger Things Season 5"
+                    data-rating="9.3">
+
+                <img
+                    class="movie-card"
+                    src="https://knightedgemedia.com/wp-content/uploads/2025/05/squid-game-season-3-teaser-trailer-banner.jpg"
+                    alt="Squid Game Season 3"
+                    width="361"
+                    height="203"
+                    data-movie="Squid Game Season 3"
+                    data-rating="9.0">
+
+                <img
+                    class="movie-card"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7f-3rAR_UYJKZ_D48BQ_XFDhzKeGSGFuMgw&s"
+                    alt="The Night Agent"
+                    width="361"
+                    height="203"
+                    data-movie="The Night Agent"
+                    data-rating="8.2">
+
+                <img
+                    class="movie-card"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSATKKLh9bujCIcRyOLDb_aPyWOxQQT-xpPTw&s"
+                    alt="Ginny & Georgia"
+                    width="361"
+                    height="203"
+                    data-movie="Ginny & Georgia"
+                    data-rating="8.1">
+
+                <img
+                    class="movie-card"
+                    src="https://movieswetextedabout.com/wp-content/uploads/2025/03/Zero-Day-TV-Series-Review.webp"
+                    alt="Zero Day"
+                    width="361"
+                    height="203"
+                    data-movie="Zero Day"
+                    data-rating="7.9">
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 All Rights Reserved.</p>
+    </footer>
+
+    <script src="/js/recently_added.js"></script>
+
+</body>
+</html>

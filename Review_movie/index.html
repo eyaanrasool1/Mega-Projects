@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate the Movie</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+
+```
+<!-- Review Modal -->
+<div id="reviewModal" class="modal">
+
+    <div class="modal-content">
+
+        <button id="closeModal">&times;</button>
+
+        <h2 id="movieTitle">Movie Name</h2>
+
+        <p>
+            Current Rating:
+            <span id="movieRating"></span>/10
+        </p>
+
+        <label for="userRating">Your Rating</label>
+
+        <select id="userRating">
+            <option value="10">10 ⭐</option>
+            <option value="9">9 ⭐</option>
+            <option value="8">8 ⭐</option>
+            <option value="7">7 ⭐</option>
+            <option value="6">6 ⭐</option>
+            <option value="5">5 ⭐</option>
+            <option value="4">4 ⭐</option>
+            <option value="3">3 ⭐</option>
+            <option value="2">2 ⭐</option>
+            <option value="1">1 ⭐</option>
+        </select>
+
+        <textarea
+            id="reviewText"
+            placeholder="Write your review here..."
+        ></textarea>
+
+        <button id="submitReview">
+            Submit Review
+        </button>
+
+    </div>
+
+</div>
+
+<!-- Header -->
+<header>
+
+    <nav>
+
+        <a href="index.html" class="logo">
+            Rate the Movie
+        </a>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="your_reviews.html">Your Reviews</a></li>
+            <li><a href="top_rated.html">Top Rated</a></li>
+            <li><a href="recently_added.html">Recently Added</a></li>
+        </ul>
+
+    </nav>
+
+</header>
+
+<!-- Main Content -->
+<main>
+
+    <!-- Recently Added -->
+    <section>
+
+        <h2>Recently Added</h2>
+
+        <div class="movie-row">
+
+            <img src="https://imgcdn.kim/poster/h/81607354.jpg"
+                 alt="Killer Paradox"
+                 width="361"
+                 height="203"
+                 class="movie-card"
+                 data-movie="Killer Paradox"
+                 data-rating="8.6">
+
+            <img src="https://imgcdn.kim/poster/h/81947300.jpg"
+                 alt="Teach You a Lesson"
+                 width="361"
+                 height="203"
+                 class="movie-card"
+                 data-movie="Teach You a Lesson"
+                 data-rating="8.2">
+
+            <img src="https://imgcdn.kim/poster/h/80192098.jpg"
+                 alt="Money Heist"
+                 width="361"
+                 height="203"
+                 class="movie-card"
+                 data-movie="Money Heist"
+                 data-rating="9.1">
+
+            <img src="https://imgcdn.kim/poster/h/81696655.jpg"
+                 alt="Trigger"
+                 width="361"
+                 height="203"
+                 class="movie-card"
+                 data-movie="Trigger"
+                 data-rating="8.7">
+
+        </div>
+
+    </section>
+
+    <!-- Top Rated -->
+    <section>
+
+        <h2>Top Rated</h2>
+
+        <div class="movie-row">
+
+            <img src="https://imgcdn.kim/poster/h/81365087.jpg"
+                 alt="My Name"
+                 width="361"
+                 height="203"
+                 class="movie-card"
+                 data-movie="My Name"
+                 data-rating="8.8">
+
+            <img src="https://imgcdn.kim/poster/h/81444051.jpg"
+                 alt="Bloodhounds"
+                 width="361"
+                 height="203"
+                 class="movie-card"
+                 data-movie="Bloodhounds"
+                 data-rating="8.7">
+
+            <img src="https://imgcdn.kim/poster/h/81618079.jpg"
+                 alt="Gyeongseong Creature"
+                 width="361"
+                 height="203"
+                 class="movie-card"
+                 data-movie="Gyeongseong Creature"
+                 data-rating="8.4">
+
+            <img src="https://wimg.heraldcorp.com/content/default/2022/02/03/20220203000246_0.jpg"
+                 alt="All Of Us Are Dead"
+                 width="361"
+                 height="203"
+                 class="movie-card"
+                 data-movie="All Of Us Are Dead"
+                 data-rating="8.5">
+
+        </div>
+
+    </section>
+
+    <!-- Actions and Mafias -->
+    <section>
+
+        <h2>Actions and Mafias</h2>
+
+        <div class="movie-row">
+
+            <img src="https://imgcdn.kim/poster/h/81716080.jpg"
+                 alt="My Demon"
+                 width="361"
+                 height="203"
+                 class="movie-card"
+                 data-movie="My Demon"
+                 data-rating="8.3">
+
+            <img src="https://imgcdn.kim/poster/h/81742615.jpg"
+                 alt="Weak Hero Class 1"
+                 width="361"
+                 height="203"
+                 class="movie-card"
+                 data-movie="Weak Hero Class 1"
+                 data-rating="8.9">
+
+            <img src="https://imgcdn.kim/poster/h/81444051.jpg"
+                 alt="Bloodhounds"
+                 width="361"
+                 height="203"
+                 class="movie-card"
+                 data-movie="Bloodhounds"
+                 data-rating="8.7">
+
+            <img src="https://imgcdn.kim/poster/h/81365087.jpg"
+                 alt="Vincenzo"
+                 width="361"
+                 height="203"
+                 class="movie-card"
+                 data-movie="Vincenzo"
+                 data-rating="8.9">
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2026 All Rights Reserved.</p>
+</footer>
+
+<script src="/js/index.js"></script>
+```
+
+</body>
+</html>

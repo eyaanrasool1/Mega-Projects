@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/top_rated.css">
+</head>
+<body>
+       <header>
+    <nav>
+        <b>Rate the movie</b>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="your_reviews.html">My Reviews</a></li>
+                <li><a href="top_rated.html">Top Rated</a></li>
+                <li><a href="recently_added.html">Recently Added</a></li>
+            </ul>
+    </nav>
+    </header>
+<main>
+
+    <!-- Review Modal -->
+    <div id="reviewModal" class="modal">
+        <div class="modal-content">
+
+            <button id="closeModal">&times;</button>
+
+            <h2 id="movieTitle"></h2>
+
+            <p>Current Rating:
+                <span id="movieRating"></span>/10
+            </p>
+
+            <label>Your Rating</label>
+
+            <select id="userRating">
+                <option value="10">10 ⭐</option>
+                <option value="9">9 ⭐</option>
+                <option value="8">8 ⭐</option>
+                <option value="7">7 ⭐</option>
+                <option value="6">6 ⭐</option>
+                <option value="5">5 ⭐</option>
+                <option value="4">4 ⭐</option>
+                <option value="3">3 ⭐</option>
+                <option value="2">2 ⭐</option>
+                <option value="1">1 ⭐</option>
+            </select>
+
+            <textarea id="reviewText" placeholder="Write your review..."></textarea>
+
+            <button id="submitReview">Submit Review</button>
+
+        </div>
+    </div>
+
+    <section>
+
+        <h2>Top Rated</h2>
+
+        <div class="movie-grid">
+
+            <img class="movie-card"
+                src="https://imgcdn.kim/poster/h/81365087.jpg"
+                alt="My Name"
+                data-movie="My Name"
+                data-rating="8.9">
+
+            <img class="movie-card"
+                src="https://imgcdn.kim/poster/h/81444051.jpg"
+                alt="Bloodhounds"
+                data-movie="Bloodhounds"
+                data-rating="8.7">
+
+            <img class="movie-card"
+                src="https://imgcdn.kim/poster/h/81618079.jpg"
+                alt="Gyeongseong Creature"
+                data-movie="Gyeongseong Creature"
+                data-rating="8.4">
+
+            <img class="movie-card"
+                src="https://wimg.heraldcorp.com/content/default/2022/02/03/20220203000246_0.jpg"
+                alt="All of Us Are Dead"
+                data-movie="All of Us Are Dead"
+                data-rating="8.6">
+
+            <img class="movie-card"
+                src="https://imgcdn.kim/poster/h/81028446.jpg"
+                alt="Cashero"
+                data-movie="Cashero"
+                data-rating="8.3">
+
+            <img class="movie-card"
+                src="https://imgcdn.kim/poster/h/81948067.jpg"
+                alt="The Wonderfools"
+                data-movie="The Wonderfools"
+                data-rating="8.5">
+
+            <img class="movie-card"
+                src="https://1.vikiplatform.com/c/38039c/f6e2c1ae56.jpg?x=b"
+                alt="Happiness"
+                data-movie="Happiness"
+                data-rating="8.9">
+
+            <img class="movie-card"
+                src="https://imgcdn.kim/poster/h/81040344.jpg"
+                alt="Squid Game"
+                data-movie="Squid Game"
+                data-rating="9.0">
+
+            <img class="movie-card"
+                src="https://imgcdn.kim/poster/h/80200575.jpg"
+                alt="Alice in Borderland"
+                data-movie="Alice in Borderland"
+                data-rating="8.8">
+
+            <img class="movie-card"
+                src="https://imgcdn.kim/poster/h/81011211.jpg"
+                alt="Moving"
+                data-movie="Moving"
+                data-rating="9.2">
+
+            <img class="movie-card"
+                src="https://imgcdn.kim/poster/h/81231974.jpg"
+                alt="Wednesday"
+                data-movie="Wednesday"
+                data-rating="8.4">
+
+        </div>
+
+    </section>
+
+</main>
+
+    <footer>
+        copyright<sup>©</sup> 2026 all right reserved
+    </footer>
+    <script src="/js/top_rated.js"></script>
+</body>
+
+</html>

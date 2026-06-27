@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#111;
+    color:#fff;
+}
+
+header{
+    background:#000;
+    padding:20px 0;
+}
+
+nav{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav b{
+    color:#e50914;
+    font-size:30px;
+}
+
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+nav a:hover{
+    color:#e50914;
+}
+
+main{
+    width:90%;
+    margin:40px auto;
+}
+
+h2{
+    margin-bottom:25px;
+}
+
+.movie-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.movie-card{
+    width:100%;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.35s;
+}
+
+.movie-card:hover{
+    transform:scale(1.05);
+    box-shadow:0 10px 25px rgba(229,9,20,.5);
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#999;
+}
+
+/* Modal */
+
+.modal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.85);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    visibility:hidden;
+    opacity:0;
+    transition:.3s;
+}
+
+.modal.show{
+    visibility:visible;
+    opacity:1;
+}
+
+.modal-content{
+    width:420px;
+    max-width:95%;
+    background:#1b1b1b;
+    padding:30px;
+    border-radius:10px;
+    transform:translateY(-40px);
+    transition:.3s;
+    position:relative;
+}
+
+.modal.show .modal-content{
+    transform:translateY(0);
+}
+
+#closeModal{
+    position:absolute;
+    right:15px;
+    top:10px;
+    background:none;
+    border:none;
+    color:white;
+    font-size:30px;
+    cursor:pointer;
+}
+
+select,
+textarea{
+    width:100%;
+    margin:15px 0;
+    padding:12px;
+    border:none;
+    border-radius:5px;
+}
+
+textarea{
+    resize:none;
+    height:120px;
+}
+
+#submitReview{
+    width:100%;
+    padding:13px;
+    background:#e50914;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+#submitReview:hover{
+    background:#ff2530;
+}
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+}
